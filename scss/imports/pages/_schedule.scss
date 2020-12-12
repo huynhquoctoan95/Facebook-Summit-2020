@@ -1,0 +1,129 @@
+.main-wrapper {
+    background-color: $white-cl;
+
+    .introduce {
+        &.schedule {
+            .container {
+                .textbox {
+                    .title-text {
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+
+    .feature.--schedule {
+        .container {
+            .introduce-videos {
+                margin-bottom: 60px;
+
+                .feature-title {
+                    text-align: left;
+                    padding-bottom: 30px;
+                }
+
+                .feature-item {
+                    .feature-list {
+                        width: unset;
+                        margin: unset;
+
+                        &:hover {
+                            .feature-text {
+                                color: $white-cl;
+                                background-color: $blue-cl;
+
+                                &.--red {
+                                    color: $white-cl;
+                                    background-color: $orange-cl;
+                                }
+
+                                &.--teal {
+                                    color: $white-cl;
+                                    background-color: $teal-cl;
+                                }
+
+                                &.--yellow {
+                                    color: $white-cl;
+                                    background-color: $yellow-cl;
+                                }
+
+                                &.--purple {
+                                    color: $white-cl;
+                                    background-color: $purple-cl;
+                                }
+
+                                &.--green {
+                                    color: $white-cl;
+                                    background-color: $green-cl;
+                                }
+                            }
+                        }
+
+                        .feature-text {
+                            min-height: 100px;
+                            font-size: 12px;
+                            background-color: $background-cl;
+                            padding: 24px;
+                            transition: background-color, color;
+                            transition-duration: $time;
+                            transition-timing-function: ease-in-out;
+                        }
+                    }
+
+                    &.grid {
+                        display: grid;
+                        grid-template-columns: repeat(5, 200px);
+                        grid-template-rows: repeat(2, auto);
+                        grid-gap: 20px;
+
+                        .feature-list--1 {
+                            grid-column: 1/2;
+                            grid-row: 1/2;
+                        }
+
+                        .feature-list--2 {
+                            grid-column: 2/3;
+                            grid-row: 1/2;
+                        }
+
+                        .feature-list--3 {
+                            grid-column: 3/4;
+                            grid-row: 1/2;
+                        }
+
+                        .feature-list--4 {
+                            grid-column: 4/5;
+                            grid-row: 1/2;
+                        }
+
+                        .feature-list--5 {
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+                        }
+
+                        .feature-list--6 {
+                            grid-column: 2/3;
+                            grid-row: 2/3;
+                        }
+
+                        .feature-list--7 {
+                            grid-column: 3/4;
+                            grid-row: 2/3;
+                        }
+
+                        .feature-list--8 {
+                            grid-column: 4/5;
+                            grid-row: 2/3;
+                        }
+
+                        .feature-list--9 {
+                            grid-column: 5/6;
+                            grid-row: 1/2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

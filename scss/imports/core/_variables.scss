@@ -1,0 +1,116 @@
+/*primary colors*/
+$white-cl: #fff;
+$black-cl: #000;
+
+/*global text color*/
+$text-cl: #222;
+$text-black-cl: #000;
+
+/*global bg color*/
+$main-bg-cl: #000;
+$black-bg-cl: #000;
+
+// time transition
+$t: 0.4s;
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+
+/*font families*/
+$font-stack: "Open Sans", sans-serif;
+
+/*headings typo*/
+$fz-text: 16px;
+$lh-text: normal;
+
+$fz-text-m: 16px;
+$lh-text-m: normal;
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 340px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1200px;
+$lg-min: 1600px;
+
+$xxs-max: ($xxs-min - 1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);
+$lg-max: ($lg-min - 1);
+
+/*BOXED LAYOUT*/
+$max-width: 1920px;
+$container-max-width: $max-width;
+$container-width: 1040px;
+
+// text-color
+$white-cl :#FFFFFF;
+$graytext-cl :#728292;
+$grayTextTitle-cl:#67788A;
+$blackTitle-cl :#1c2b33;
+$main-cl : #005996;
+$nav-cl:#1C5178;
+
+// text 
+
+$fz12 : 12px;
+$fz13 : 13px;
+$fz16 : 16px;
+$fz17 : 17px;
+$fz18 : 18px;
+$fz20 : 20px;
+$fz24 : 24px;
+$fz32 : 32px;
+$fz36 : 36px;
+$fz42 : 42px;
+// line-height 
+
+$lh-header : 1.29;
+$lh12 : 1.2;
+$lh13 : 1.31;
+$lh15 : 1.5;
+$lh14 : 1.4;
+$lh16 : 16px;
+
+// letter-spacing 
+$sp17 : 0.17px;
+$sp12 : 0.12px;
+$sp33 : 0.33px;
+$sp80 : 0.8px;
+$sp50 : 0.5px;
+$sp25 : 0.25px;
+$sp33 : 0.33px;
+
+
+// transition : 
+
+
+// background-color 
+$background-cl :#F1F4F7;
+$darkgray-cl :#34485A;
+$blue-cl :#008ACB;
+$footer-cl :#1C2A33;
+$gray-cl: #465A69;
+$infront-gray-cl : #67788A;
+$border-header-cl :#CBD2DA;
+
+// header 
+$height-header : 138px;
+$header-main : 58px;
+// transition
+$time : 0.2s;
+$height : calc(100% + 4px);
+// color 
+$orange-cl : #D74B3F;
+$red-cl : #A13039;
+$green-cl : #1A7639;
+$purple-cl :#804A83;
+$yellow-cl :#FDC400;
+$teal-cl :#007A80;
+
+// padding 
+$pd100 : 100px;
+$pd125 : 125px;
+$pd40 : 40px;
+$pd60 : 60px;
+
+$bd-rad : 10px;

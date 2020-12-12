@@ -1,0 +1,53 @@
+footer {
+	@include desktop {
+		
+	}
+	@include tablet {
+		
+	}
+	@include mobile {
+		
+	}
+	@include mobile-xxs {
+		
+	}
+}
+footer {
+	height: 100px;
+	background-color: $footer-cl;
+	@include mid-flex; 
+	display: flex !important;
+	.container {
+		margin-top: auto;
+		margin-bottom: auto;
+
+		.footer-list {
+			display: flex;
+
+			.footer-item {
+				margin-right: 40px;
+
+				a {
+					display: inline-block;
+					color: $white-cl;
+					font-size: 14px;
+					text-decoration: none;
+					transition: color;
+					transition-duration: $time;
+				}
+
+				&:hover {
+					a {
+						color: $teal-cl;
+					}
+				}
+			}
+		}
+
+		.footer-logo {
+			color: $white-cl;
+			font-size: 14px;
+			margin-top: 15px;
+		}
+	}
+}

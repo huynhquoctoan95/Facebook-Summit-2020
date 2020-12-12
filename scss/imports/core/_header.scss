@@ -1,0 +1,259 @@
+header {
+    .header {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: $height-header;
+
+        .header-main {
+            height: $header-main;
+            background-color: $white-cl;
+
+            .container {
+                @include mid-flex;
+                height: 100%;
+
+                .header-logo {
+                    img {
+                        width: 100px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .header-title {
+                font-family: 'R5';
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        position: relative;
+                        margin-left: 55px;
+                        color: $blackTitle-cl;
+                        font-weight: 800;
+                        line-height: $lh16;
+                        font-size: $fz12;
+                        letter-spacing: $sp80;
+
+                        &::before {
+                            content: "";
+                            height: 1px;
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $blue-cl;
+                            transform: scaleX(0);
+                            transform-origin: center;
+                            transition: transform $time;
+                        }
+                    }
+
+                    &:hover {
+                        span {
+                            &::before {
+                                transform: scaleX(1);
+                                transform-origin: center;
+                                transition-duration: $time;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .header-nav {
+            border-top: solid 5px $border-header-cl;
+            background-color: $background-cl;
+
+            .header-nav-content {
+                @include mid-flex;
+
+                .header-nav-program {
+                    color: #68778c;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    flex-basis: 98px;
+                    font-weight: 600;
+                    position: relative;
+                    height: 75px;
+
+                    @include mid-flex ;
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 100%;
+                        background-color: #cccccc;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+
+                .menu {
+                    @include mid-flex;
+                    font-family: 'R3';
+                    width: calc(100% - 98px);
+                    height: 75px;
+                    margin-bottom: 0;
+
+                    .menu-item {
+                        position: relative;
+                        width: calc(100%/6);
+                        height: 100%;
+
+                        a {
+                            text-decoration: none;
+                            display: block;
+                            height: 100%;
+                            padding: 10px 18px;
+                            box-sizing: content-box;
+
+                            span {
+                                color: $blackTitle-cl;
+                                font-size: $fz16;
+                                line-height: $lh-header;
+                                transition: color $time ease-in;
+                                position: relative;
+                                font-family: 'R3';
+                                font-weight: 500;
+                                letter-spacing: $sp50;
+                                text-align: left;
+                                display: block;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 1px;
+                            height: 100%;
+                            background-color: #cccccc;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                        }
+
+                        &:nth-child(1) {
+                            &::before {
+                                @include line-color($orange-cl);
+                                transition-duration: $time;
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &::before {
+                                @include line-color($teal-cl)
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &::before {
+                                @include line-color($yellow-cl)
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            &::before {
+                                @include line-color($purple-cl)
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            &::before {
+                                @include line-color($orange-cl)
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+
+                        &:nth-child(6) {
+                            &::before {
+                                @include line-color($green-cl)
+                            }
+
+                            &:hover {
+                                span {
+                                    color: $white-cl;
+                                    position: relative;
+                                    transition-duration: $time;
+                                }
+
+                                &::before {
+                                    height: $height;
+                                    transition-duration: $time;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
